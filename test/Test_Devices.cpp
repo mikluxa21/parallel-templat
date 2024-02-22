@@ -1,5 +1,5 @@
-#include "DeviceA.h"
-#include "DeviceB.h"
+#include <parallel_executor/DeviceA.h>
+#include <parallel_executor/DeviceB.h>
 
 #include <gtest/gtest.h>
 

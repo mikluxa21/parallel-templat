@@ -1,9 +1,9 @@
-#include "StartedEvent.h"
-#include "DataEvent.h"
+#include <parallel_executor/StartedEvent.h>
+#include <parallel_executor/DataEvent.h>
 #include "WorkDoneEvent.h"
 
-#include "DeviceA.h"
-#include "DeviceB.h"
+#include <parallel_executor/DeviceA.h>
+#include <parallel_executor/DeviceB.h>
 
 #include <gtest/gtest.h>
 

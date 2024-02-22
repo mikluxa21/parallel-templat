@@ -1,9 +1,9 @@
-#include "EventQueue.h"
+#include <parallel_executor/EventQueue.h>
 
-#include "DeviceA.h"
-#include "DeviceB.h"
+#include <parallel_executor/DeviceA.h>
+#include <parallel_executor/DeviceB.h>
 
-#include "Parser.h"
+#include <parallel_executor/Parser.h>
 
 #include <gtest/gtest.h>
 
