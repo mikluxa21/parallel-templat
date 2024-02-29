@@ -6,7 +6,7 @@
 class StartedEvent : public DeviceEvent
 {
 public:
-  StartedEvent(std::shared_ptr<Device> device);
+  StartedEvent(std::shared_ptr<Device> device) : DeviceEvent(device){};
   std::string toString() const override;
 };
 

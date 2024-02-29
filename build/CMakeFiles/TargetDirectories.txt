@@ -1,0 +1,12 @@
+/home/user/Pcpp/106/parall/build/CMakeFiles/test.dir
+/home/user/Pcpp/106/parall/build/CMakeFiles/edit_cache.dir
+/home/user/Pcpp/106/parall/build/CMakeFiles/rebuild_cache.dir
+/home/user/Pcpp/106/parall/build/src/parallel_executor/CMakeFiles/parall_lib.dir
+/home/user/Pcpp/106/parall/build/src/parallel_executor/CMakeFiles/main.dir
+/home/user/Pcpp/106/parall/build/src/parallel_executor/CMakeFiles/test.dir
+/home/user/Pcpp/106/parall/build/src/parallel_executor/CMakeFiles/edit_cache.dir
+/home/user/Pcpp/106/parall/build/src/parallel_executor/CMakeFiles/rebuild_cache.dir
+/home/user/Pcpp/106/parall/build/test/CMakeFiles/executor_test.dir
+/home/user/Pcpp/106/parall/build/test/CMakeFiles/test.dir
+/home/user/Pcpp/106/parall/build/test/CMakeFiles/edit_cache.dir
+/home/user/Pcpp/106/parall/build/test/CMakeFiles/rebuild_cache.dir
