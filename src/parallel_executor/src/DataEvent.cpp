@@ -2,6 +2,6 @@
 
 std::string DataEvent::toString() const
 {
-  return "" + this->device.get()->getName();
+  return "Signal from " + this->device.get()->getName();
 }
 

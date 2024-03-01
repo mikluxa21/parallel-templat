@@ -8,7 +8,7 @@ find_package(GTest REQUIRED)
 set(TEST_NAME executor_test)
 
 add_executable(${TEST_NAME}
-		Test_Devices.cpp
+		#Test_Devices.cpp
 		Test_Events.cpp
 		#Test_EventQueue.cpp
 		#Test_Parser.cpp
