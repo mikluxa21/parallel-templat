@@ -4,6 +4,8 @@
 #include "EventQueue.h"
 #include "Device.h"
 
+#include <thread>
+
 class Parser
 {
 public:
@@ -14,7 +16,7 @@ public:
    * \param A Умный указатель на устройство A.
    * \param B Умный указатель на устройство B.
   */
-  Parser(std::shared_ptr<EventQueue> queue, std::shared_ptr<Device> A, std::shared_ptr<Device> B);
+  Parser(std::shared_ptr<EventQueue> queue, std::shared_ptr<Device> A, std::shared_ptr<Device> B) : queue(queue), A(A), B(B){};
 
   /*!
    * \brief Функция, запускающая чтение данных с устройств в параллельном режиме.

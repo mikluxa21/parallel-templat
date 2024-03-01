@@ -10,8 +10,8 @@ set(TEST_NAME executor_test)
 add_executable(${TEST_NAME}
 		#Test_Devices.cpp
 		#Test_Events.cpp
-		Test_EventQueue.cpp
-		#Test_Parser.cpp
+		#Test_EventQueue.cpp
+		Test_Parser.cpp
 )
 add_test(NAME ${TEST_NAME}
 	COMMAND ${TEST_NAME}
