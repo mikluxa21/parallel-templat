@@ -3,6 +3,9 @@
 
 #include "EventQueue.h"
 #include "Device.h"
+#include "StartedEvent.h"
+#include "DataEvent.h"
+#include "WorkDoneEvent.h"
 
 #include <thread>
 
