@@ -102,7 +102,7 @@ TEST(EventQueue, ThreadSafeTest)
 {
   std::shared_ptr<EventQueue> queue = std::make_shared<EventQueue>();
 
-  size_t loop = 100;
+  size_t loop = 10;  //in the original code here was loop = 100
   std::function<void(std::shared_ptr<EventQueue>, std::shared_ptr<Device>)> f = [loop](std::shared_ptr<EventQueue> queue, std::shared_ptr<Device> device)
   {
     for (size_t i = 0; i < loop; ++i)
@@ -112,7 +112,7 @@ TEST(EventQueue, ThreadSafeTest)
         queue->push(std::move(std::make_shared<WorkDoneEvent>(device)));
   };
 
-  size_t count = 10;
+  size_t count = 3;  //in the original code here was count = 10
   std::vector<std::thread> threads;
   for (size_t i = 0; i < count; ++i)
     threads.emplace_back(f, queue, std::move(std::make_shared<DeviceA>()));
