@@ -1,6 +1,0 @@
-!#/bin/bash
-rm -rf build
-cmake -Bbuild
-cmake --build build
-cd build/test
-./executor_test
