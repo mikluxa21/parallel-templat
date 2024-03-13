@@ -1,4 +1,4 @@
-#include <parallel_executor/DeviceB.h>
+#include "parallel_executor/DeviceB.h"
 
 std::string DeviceB::getName()
 {

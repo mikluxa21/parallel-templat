@@ -1,4 +1,4 @@
-#include <parallel_executor/WorkDoneEvent.h>
+#include "parallel_executor/WorkDoneEvent.h"
 
 std::string WorkDoneEvent::toString() const
 {

@@ -1,14 +1,15 @@
-#include <parallel_executor/Parser.h>
+#include "parallel_executor/Parser.h"
+
 Parser::Parser(std::shared_ptr<EventQueue> queue, std::shared_ptr<Device> A, std::shared_ptr<Device> B) : queue(queue), A(A), B(B)
 {
   if(queue == nullptr || A == nullptr || B == nullptr)
     throw std::runtime_error("empty data");
 }
+
 void Parser::run(size_t loop_count_A, size_t loop_count_B, int crush_index_A, int crush_index_B)
 {
   auto thrA = std::thread(&Parser::read, this, this->A, std::chrono::seconds(1), loop_count_A, crush_index_A);
   auto thrB = std::thread(&Parser::read, this, this->B, std::chrono::seconds(5), loop_count_B, crush_index_B);
-  
   bool inWork = 1;
   while(inWork)
   {
